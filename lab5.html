@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:black;
+            height: 100px;
+            margin-top: 300px;
+        }
+        .game{
+            width:450px;
+            padding:20px;
+            background-color:#fff;
+        }
+        .game img{
+            width:31%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <p class="cpoint">computer point:0</p>
+        <p class="ppoint">player point:0</p>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223618/default.jpeg" onclick="play('rock')">
+        <img src="https://e7.pngegg.com/pngimages/588/310/png-clipart-hand-rock-paper-scissors-computer-icons-hand-angle-text-thumbnail.png"onclick="play('scissors')">
+        <img src="https://img.lovepik.com/free-png/20220125/lovepik-back-of-hand-png-image_401704643_wh860.png"onclick="play('paper')">
+        <p class="pchoice">player choice:</p>
+        <p class="cchoice">computer choice:</p>
+        <p class="result">winner:</p>
+        <button onclick="restart()">reset point</button>
+    </div>
+    <script src="lab5.js"></script>
+</body>
+</html>
